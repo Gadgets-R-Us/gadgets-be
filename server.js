@@ -10,7 +10,7 @@ const categories = [
       "Fact: As a human you will never be able to be a bird. That would be pretty sad if drones did not exist but they do. Choose from the best options here",
     profilePicture:
       "https://www.flickr.com/photos/197257531@N02/52607853984/in/dateposted-public/",
-    items: [],
+    items: "http://localhost:3001/drones",
   },
   {
     id: 2,
@@ -45,5 +45,8 @@ app.get("/", (req, res) => {
     statusMessage: "Success",
   });
 });
+
+const router = require("./routes/drones");
+app.use("/drones", router);
 
 app.listen(3001);
