@@ -19,7 +19,7 @@ const categories = [
       "Prepare to amaze your friends with how super cool you are on one these sick electric scooters",
     profilePicture:
       "https://www.flickr.com/photos/197257531@N02/52607595801/in/dateposted-public/",
-    items: [],
+    items: "http://localhost:3001/scooters",
   },
   {
     id: 3,
@@ -48,5 +48,8 @@ app.get("/", (req, res) => {
 
 const router = require("./routes/drones");
 app.use("/drones", router);
+
+const scooterRoute = require("./routes/scooters");
+app.use("/scooters", scooterRoute);
 
 app.listen(3001);
