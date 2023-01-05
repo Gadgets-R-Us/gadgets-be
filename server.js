@@ -46,10 +46,10 @@ app.get("/", (req, res) => {
   });
 });
 
-const router = require("./routes/drones");
-app.use("/drones", router);
+const droneRouter = require("./routes/drones");
+app.use("/drones", droneRouter);
 
-const scooterRoute = require("./routes/scooters");
-app.use("/scooters", scooterRoute);
+const scooterRouter = require("./routes/scooters");
+app.use("/scooters", scooterRouter);
 
 app.listen(3001);
