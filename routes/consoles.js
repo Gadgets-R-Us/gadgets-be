@@ -50,24 +50,6 @@ const consoles = [
     longDescription:
       "Introducing the newest member of the Nintendo Switch family Play at home on the TV or on-the-go with a vibrant 7-inch OLED screen with the Nintendo Switch – OLED Model system. In addition to a new screen with vivid colors and sharp contrast, the Nintendo Switch – OLED Model includes a wide adjustable stand for more comfortable viewing angles, a dock with a wired LAN port for TV mode (LAN cable sold separately), 64GB of internal storage, and enhanced audio in Handheld and Tabletop modes using the system’s speakers. ",
   },
-  //   {
-  //     id: 1,
-  //     name: "PlayStation 5",
-  //     price: 100,
-  //     starCount: 5,
-  //     reviewCount: 100,
-  //     specifications: [],
-  //     longDescription: "",
-  //   },
-  //   {
-  //     id: 1,
-  //     name: "PlayStation 5",
-  //     price: 100,
-  //     starCount: 5,
-  //     reviewCount: 100,
-  //     specifications: [],
-  //     longDescription: "",
-  //   },
 ];
 
 consoleRoute.get("/", (req, res) => {
