@@ -28,7 +28,7 @@ const categories = [
       "Gaming - Classic hobby yet ever evolving. Go against your parents' and partner's advice and shop the latest consoles and technology here",
     profilePicture:
       "https://live.staticflickr.com/65535/52607095797_f7e102f167_n.jpg",
-    items: [],
+    items: "http://localhost:3001/consoles",
   },
 ];
 
@@ -51,5 +51,8 @@ app.use("/drones", droneRouter);
 
 const scooterRouter = require("./routes/scooters");
 app.use("/scooters", scooterRouter);
+
+const consoleRouter = require("./routes/consoles");
+app.use("/consoles", consoleRouter);
 
 app.listen(3001);
