@@ -9,7 +9,7 @@ const categories = [
     description:
       "Fact: As a human you will never be able to be a bird. That would be pretty sad if drones did not exist but they do. Choose from the best options here",
     profilePicture:
-      "https://www.flickr.com/photos/197257531@N02/52607853984/in/dateposted-public/",
+      "https://live.staticflickr.com/65535/52607853984_fc154a75c7_w.jpg",
     items: "http://localhost:3001/drones",
   },
   {
@@ -18,7 +18,7 @@ const categories = [
     description:
       "Prepare to amaze your friends with how super cool you are on one these sick electric scooters",
     profilePicture:
-      "https://www.flickr.com/photos/197257531@N02/52607595801/in/dateposted-public/",
+      "https://live.staticflickr.com/65535/52607595801_15b8bce5bc_z.jpg",
     items: "http://localhost:3001/scooters",
   },
   {
