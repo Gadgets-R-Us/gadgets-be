@@ -5,6 +5,7 @@ const consoles = [
   {
     id: 1,
     name: "PlayStation - PS5",
+    image: "http://localhost:3001/images/consoles/ps5.png",
     price: 499.99,
     starCount: 5,
     reviewCount: 26446,
@@ -21,6 +22,7 @@ const consoles = [
   {
     id: 2,
     name: "Xbox - Series X",
+    image: "http://localhost:3001/images/consoles/xbox.png",
     price: 499.99,
     starCount: 5,
     reviewCount: 22853,
@@ -37,6 +39,7 @@ const consoles = [
   {
     id: 3,
     name: "Nintendo - Switch",
+    image: "http://localhost:3001/images/consoles/switch.png",
     price: 349.99,
     starCount: 5,
     reviewCount: 6264,
