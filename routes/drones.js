@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-
 const drones = [
   {
     id: 1,
@@ -24,7 +23,7 @@ const drones = [
   {
     id: 2,
     name: "DJI - Mavic 3 Classic",
-    image: "",
+    image: "http://localhost:3001/images/drones/mavic3.png",
     color: "Gray",
     price: 1749.99,
     starCount: 5,
@@ -43,7 +42,7 @@ const drones = [
   {
     id: 3,
     name: "Autel Robotics - EVO",
-    image: "",
+    image: "http://localhost:3001/images/drones/autelEvo.png",
     color: "Orange",
     price: 799.99,
     starCount: 4,
@@ -62,7 +61,7 @@ const drones = [
   {
     id: 4,
     name: "Vantop - Snaptain SP7100S",
-    image: "",
+    image: "http://localhost:3001/images/drones/clearVantop.png",
     color: "Black",
     price: 299.99,
     starCount: 3,
@@ -81,7 +80,7 @@ const drones = [
   {
     id: 5,
     name: "Vivitar - Sky Hawk",
-    image: "",
+    image: "http://localhost:3001/images/drones/vivitar.png",
     color: "Plain",
     price: 149.99,
     starCount: 2,
