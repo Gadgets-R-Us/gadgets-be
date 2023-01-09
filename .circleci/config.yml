@@ -10,28 +10,24 @@ node: circleci/node@5.0.3
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
-  build:
-    # working_directory: ~/dhmc_be_rails
-    # docker:
-    #   - image: cimg/ruby:2.7.4
-    #     environment:
-    #       PGHOST: localhost
-    #       PGUSER: dhmc_be_rails
-    #       RAILS_ENV: test
-    #   - image: postgres:13.2
-    #     environment:
-    #       POSTGRES_USER: dhmc_be_rails
-    #       POSTGRES_DB: dhmc_be_rails_test
-    #       POSTGRES_PASSWORD:
-    # executor: ruby/default
-    # steps:
-    #   - checkout
-    #   - run:
-    #       name: dhmc_be_rails
-    #       command: bundle -v
-    #   - ruby/bundle-install
-
-    #   - checkout
-    #   - run: bundle install --path vendor/bundle
-    #   - run: bin/rails db:{create,migrate} --trace
-    #   - run: bundle exec rspec
+  build_and_test: # this can be any name you choose
+    executor: node/default # use the default executor defined within the orb
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: npm
+      - run:
+          command: npm run test
+          name: Run tests
+      - run:
+          command: npm run build
+          name: Build app
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - .
+workflows:
+  # build_test_deploy: # this can be any name you choose
+  build_test:
+    jobs:
+      - build_and_test
