@@ -4,7 +4,7 @@ const consoleRoute = express.Router();
 const consoles = [
   {
     id: 1,
-    name: "PlayStation 5",
+    name: "PlayStation - PS5",
     price: 499.99,
     starCount: 5,
     reviewCount: 26446,
@@ -20,7 +20,7 @@ const consoles = [
   },
   {
     id: 2,
-    name: "Xbox Series X",
+    name: "Xbox - Series X",
     price: 499.99,
     starCount: 5,
     reviewCount: 22853,
@@ -36,7 +36,7 @@ const consoles = [
   },
   {
     id: 3,
-    name: "Nintendo Switch",
+    name: "Nintendo - Switch",
     price: 349.99,
     starCount: 5,
     reviewCount: 6264,
